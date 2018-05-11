@@ -118,6 +118,7 @@ const DoneFrame = (props) => {
 	return(
   	<div className="text-center">
     	<h2> {props.doneStatus} </h2>
+      <button className="btn btn-secondary" onClick={props.reset}>Play Again!</button>
     </div>
   );
   
@@ -126,14 +127,16 @@ const DoneFrame = (props) => {
 class Game extends React.Component {
 	static randomNumber = () => 1+ Math.floor(Math.random()*9);
   
-	state = {
+	static initialState =() => ({
   selectedNumbers: [],
   numberOfStars: Game.randomNumber(),
   isCorrectAnswer: null,
   usedNumbers: [],
   redraws: 5,
   doneStatus: null
-  };
+  });
+  
+  state = Game.initialState();
   
   selectNumber = (clickedNumber) => {
   if(this.state.selectedNumbers.indexOf(clickedNumber) >= 0 ){return;}
@@ -182,6 +185,7 @@ class Game extends React.Component {
     );
 	};
   
+  
   updateDoneStatus = () => {
   	this.setState((prevState) => {
     	if(prevState.usedNumbers.length === 9) {
@@ -203,7 +207,7 @@ class Game extends React.Component {
     return possibleCombinationSum(possibleNumbers, numberOfStars);
   };
   
-
+  reset = () => this.setState(Game.initialState());
 	render () {
   	const {
     	numberOfStars, 
@@ -233,7 +237,7 @@ class Game extends React.Component {
         
         {
         doneStatus ?
-        	<DoneFrame doneStatus={doneStatus}/>  :
+        	<DoneFrame doneStatus={doneStatus} reset={this.reset}/>  :
           <Numbers selectedNumbers={selectedNumbers} 
           selectNumber={this.selectNumber}
           usedNumbers={usedNumbers}/>
@@ -257,39 +261,5 @@ class App extends React.Component {
   }
 }
 
-
-//////////////////////////////////////////////////
-////CSS
-<!--
-.mountNode {
-  color: #333;
-}
-
-.fa-star{
-margin: 0.5em;
-font-size: 20px;
-}
-
-span {
-display: inline-block;
-margin: 0.5em;
-text-align: center;
-background-color: #ccc;
-width: 24px;
-border-radius: 50%;
-}
-
-.selected{
-  background-color: #eee;
-  color: #ddd;
-  cursor: not-allowed;
-}
-
-.used{
-  background-color: #aaddaa;
-  color: #99bb99;
-  cursor: not-allowed;
-}
--->
 
 ReactDOM.render(<App />, mountNode);
