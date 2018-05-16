@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "address": "12 Valley of Kings, Geneva",
+        "country": "Tamilnadu",
+        "description": "1 BHK Unfurnished 460 Sq feet Residential Builder Floor for Rent in Thiruvanmiyur, Chennai. The Apartments / Flats has 1 bathroom(s), and this complex has a total of 3 floors & my Apartments / Flats is in floor no 1.  Rent quoted for this property is Rs. 8 Thousands It is South east facing property and has Vitrified tiles flooring. & 1 Open two-wheeler parking.  Amenities include – Corporation water, Drainage facility, ",
+        "price": 900000,
+        "photo": "277667"
+    },
+    {
+        "id": 2,
+        "address": "89, Road of Forks, Bern",
+        "country": "Tamilnadu",
+        "description": "1 BHK Unfurnished 460 Sq feet Residential Builder Floor for Rent in Thiruvanmiyur, Chennai. The Apartments / Flats has 1 bathroom(s), and this complex has a total of 3 floors & my Apartments / Flats is in floor no 1.  Rent quoted for this property is Rs. 8 Thousands It is South east facing property and has Vitrified tiles flooring. & 1 Open two-wheeler parking.  Amenities include – Corporation water, Drainage facility, ",
+        "price": 500000,
+        "photo": "462358"
+    },
+    {
+        "id": 3,
+        "address": "123 Valley of Kings, Geneva",
+        "country": "India",
+        "description": "1 BHK Unfurnished 460 Sq feet Residential Builder Floor for Rent in Thiruvanmiyur, Chennai. The Apartments / Flats has 1 bathroom(s), and this complex has a total of 3 floors & my Apartments / Flats is in floor no 1.  Rent quoted for this property is Rs. 8 Thousands It is South east facing property and has Vitrified tiles flooring. & 1 Open two-wheeler parking.  Amenities include – Corporation water, Drainage facility, ",
+        "price": 400000,
+        "photo": "277661"
+    },
+    {
+        "id": 4,
+        "address": "654 Valley of Kings, Geneva",
+        "country": "Canada",
+        "description": "1 BHK Unfurnished 460 Sq feet Residential Builder Floor for Rent in Thiruvanmiyur, Chennai. The Apartments / Flats has 1 bathroom(s), and this complex has a total of 3 floors & my Apartments / Flats is in floor no 1.  Rent quoted for this property is Rs. 8 Thousands It is South east facing property and has Vitrified tiles flooring. & 1 Open two-wheeler parking.  Amenities include – Corporation water, Drainage facility, ",
+        "price": 200000,
+        "photo": "277662"
+    },
+    {
+        "id": 5,
+        "address": "558 Valley of Kings, Geneva",
+        "country": "Tamilnadu",
+        "description": "1 BHK Unfurnished 460 Sq feet Residential Builder Floor for Rent in Thiruvanmiyur, Chennai. The Apartments / Flats has 1 bathroom(s), and this complex has a total of 3 floors & my Apartments / Flats is in floor no 1.  Rent quoted for this property is Rs. 8 Thousands It is South east facing property and has Vitrified tiles flooring. & 1 Open two-wheeler parking.  Amenities include – Corporation water, Drainage facility, ",
+        "price": 200000,
+        "photo": "277663"
+    }
+]
