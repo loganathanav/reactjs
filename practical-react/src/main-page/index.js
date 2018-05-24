@@ -1,13 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './main-page.css';
-import Header from './header';
-import FeaturedHouse from './featured-house';
-import HouseFilter from './house-filter';
-import SearchResults from '../search-results';
-import HouseDetail from '../house';
+import AppPresentation from './app-presentation';
 
 class App extends Component {
     state = {};
@@ -57,33 +51,15 @@ class App extends Component {
   }
 
   render() {
-    let activeComponent = null;
-
-    if(this.state.country) {
-      activeComponent = <SearchResults country={this.state.country} filteredHouses={this.state.filteredHouses}
-          setActiveHouse={this.setActiveHouse}/>;
-    }
-
-    if(this.state.activeHouse) {
-      activeComponent = <HouseDetail house={this.state.activeHouse} />;
-    }
-
-
-    if(!activeComponent) {
-      activeComponent = <FeaturedHouse house={this.state.featuredHouse}/>;
-    }
-
-
-    if(this.state.hasError) {
-      return <h1>Whoops! Something went wrong! Sorry for the inconvenience! </h1>;
-    }
-
     return (
-      <div className="container">
-        <Header subtitle="Provisioning houses all over the world."/>
-        <HouseFilter countries={this.state.countries} filterHouses={this.filterHouses}/>
-        {activeComponent}
-      </div>
+      <AppPresentation
+        country={this.state.country} 
+        filteredHouses={this.state.filteredHouses}
+        setActiveHouse={this.setActiveHouse}
+        house={this.state.activeHouse}
+        house={this.state.featuredHouse}
+        countries={this.state.countries} 
+        filterHouses={this.filterHouses}/>
     );
   }
 }
