@@ -21,6 +21,7 @@ class Inquiry extends Component {
     }
 
     onSubmit = () => {
+        e.preventDefault();
         const house = this.props.house;
         const contactInfo = this.state;
         //Send
